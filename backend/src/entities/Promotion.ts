@@ -3,13 +3,13 @@ import DaysOfTheWeek from '../enums/DaysOfTheWeek';
 
 class Promotion {
     id: number;
-    price: number;
+    discount: number;
     day: DaysOfTheWeek;
     pizza: Pizza;
 
-    constructor({id, price, day, pizza}: Promotion){
+    constructor({id, discount, day, pizza}: Promotion){
         this.id = id;
-        this.price = price;
+        this.discount = discount;
         this.day = day;
         this.pizza = pizza;
     }
