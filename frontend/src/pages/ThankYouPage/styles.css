@@ -1,0 +1,54 @@
+#page-thank-you {
+
+}
+
+#page-thank-you .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0 0;
+}
+
+#page-thank-you .message h2 {
+    margin-bottom: 0;
+}
+#page-thank-you .message .text {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+#page-thank-you .message .icon{
+    min-width: 60px;
+    min-height: 60px;
+    background: green;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    position: relative;
+}
+#page-thank-you .message .icon svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+}
+.pointsMessage {
+    text-align: center;
+}
+.pointsMessage img {
+    max-height: 400px;
+}
+
+@media only screen and (min-width: 600px) {
+    .pointsMessage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .pointsMessage img {
+        max-height: 400px;
+    }
+}
+
