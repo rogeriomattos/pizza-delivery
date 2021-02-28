@@ -1,6 +1,6 @@
 :root {
   
-    --primary-color:#9E1700;
+    --primary-color:#ff6666;
     --background-color: #f0f0f5;
     --title-color:#030303;
     --text-color:#606060;
@@ -30,4 +30,12 @@ body, input, button {
 h1, h2, h3, h4, h5, h6 {
   /* color: var(--title-color); */
   font-family: ubuntu;
+}
+
+button {
+  background: var(--primary-color);
+  color: #fff;
+  border-color:#333038;
+  padding: 10px 20px;
+  font-size: 1.2rem;;
 }
