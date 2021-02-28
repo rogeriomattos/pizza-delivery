@@ -18,11 +18,12 @@ const StepActions: React.FC<StepActionsProps> = (props) => {
     const nextStep = () => {
         history.push(props.nextLink, { order: props.order });
     };
+    const backStep = () => {
+        history.push(props.backLink, { order: props.order });
+    };
     return (
-        <div className="actions">
-            <Link to={props.backLink}>
-                <button>Voltar</button>
-            </Link>
+        <div className="actions">            
+            <button onClick={backStep}>Voltar</button>
             
             <button onClick={nextStep} disabled={props.disableNext}>
                 <span>{props.nextText}</span> 
