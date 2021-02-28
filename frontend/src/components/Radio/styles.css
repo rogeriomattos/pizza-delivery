@@ -1,0 +1,26 @@
+.radio .content{
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.radio+.radio {
+    margin-top: 10px;
+} 
+
+.radio label input {
+    display: none;
+}
+
+.radio label input:checked ~ .content {
+    background: #e0e0e0;
+}
+
+.content {
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #f8f8f8;
+}
+
