@@ -1,0 +1,15 @@
+.actions {
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+
+.actions button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions button span {
+    margin-right: 15px;
+}
