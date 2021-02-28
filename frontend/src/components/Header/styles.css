@@ -1,6 +1,7 @@
 @import '../../App.css';
 
 header{
+    z-index: 1000;
     border-bottom: 1px solid #ccc;
     padding: 10px 20px;
     display: flex;

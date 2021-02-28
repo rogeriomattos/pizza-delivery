@@ -8,7 +8,7 @@ OrdersRouter.post('/', (request, response) => {
     if(body.recommendation){
         response.status(201).json({
                 id: 1,
-                message: "Parabéns você recebeu 10 pontos por pedir a recomendação, junte 50 troque por uma pizza grátis"
+                points: 10
             }
         );
     }else{

@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import './styles.css';
-import formatPrice from '../../utils/formatPrice';
+import Making_pizza from '../../assets/Making_pizza.jpg';
 
 import Recommendation from '../../components/Recommendation';
 import api from '../../services/api';
 import IRecommendation from '../../entites/IRecommendation';
+
 
 const Home = () => {
     const [dailyRecommendation, setDailyRecommendation] = useState<IRecommendation>({
@@ -44,6 +45,7 @@ const Home = () => {
                 description={'Varios Sabores exclusivos para você'}
                 buttonText={'Começar a montar'}
                 buttonLinkTo={'/Sizes'}
+                imgSrc={Making_pizza}
             />
         </div>
     );
