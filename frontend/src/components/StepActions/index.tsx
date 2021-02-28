@@ -9,6 +9,7 @@ interface StepActionsProps {
     nextLink: string;
     order: IOrder;
     nextText: string;
+    disableNext: boolean;
 }
 
 const StepActions: React.FC<StepActionsProps> = (props) => {
@@ -17,12 +18,20 @@ const StepActions: React.FC<StepActionsProps> = (props) => {
             <Link to={props.backLink}>
                 <button>Voltar</button>
             </Link>
+            {!props.disableNext && 
             <Link to={props.nextLink}>
                 <button>
                     <span>{props.nextText}</span> 
                     <FiArrowRight/>
                 </button>
             </Link>
+            }
+            {props.disableNext && 
+                <button disabled={props.disableNext}>
+                    <span>{props.nextText}</span> 
+                    <FiArrowRight/>
+                </button>
+            }
         </div>
     );
 };

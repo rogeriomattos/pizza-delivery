@@ -43,6 +43,7 @@ const Sizes = () => {
                 nextLink={'/Daughs'}
                 nextText={'Escolher Massa'}
                 order={order}
+                disableNext={order && order.size == undefined}
             />
         </div>
     );  
