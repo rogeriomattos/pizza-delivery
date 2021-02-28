@@ -3,9 +3,13 @@ import './App.css';
 
 import Routes from './routes';
 
+import PageWrapper from './components/PageWrapper';
+
 function App() {
-  return (    
+  return (   
+    <PageWrapper>
       <Routes />
+    </PageWrapper>
   );
 }
 
