@@ -27,7 +27,7 @@ pizzasRouter.get('/sizes', (request, response) => {
     response.json(pizzaSizes);
 });
 
-pizzasRouter.get('/dugh', (request, response) => {
+pizzasRouter.get('/doughs', (request, response) => {
     response.json(pizzaDough);
 });
 
