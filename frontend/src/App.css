@@ -50,6 +50,7 @@ button:hover{
   opacity: .9;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
+  color: inherit;
 }

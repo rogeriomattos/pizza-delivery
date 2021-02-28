@@ -7,9 +7,7 @@ import PageWrapper from './components/PageWrapper';
 
 function App() {
   return (   
-    <PageWrapper>
       <Routes />
-    </PageWrapper>
   );
 }
 
