@@ -1,0 +1,14 @@
+.address, .pizza {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.total{
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
