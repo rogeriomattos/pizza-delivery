@@ -1,3 +1,4 @@
+import IAddress from "./IAddress";
 import IDough from "./IDoughs";
 import IPizza from "./IPizza";
 import ISize from "./ISize";
@@ -5,7 +6,8 @@ import ISize from "./ISize";
 interface IOrder {
     size?: ISize;
     dough?: IDough;
-    pizza?:IPizza;
+    pizza?: IPizza;
+    address?: IAddress;
 };
 
 export default IOrder;
