@@ -37,5 +37,9 @@ button {
   color: #fff;
   border-color:#333038;
   padding: 10px 20px;
-  font-size: 1.2rem;;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+button:hover{
+  opacity: .9;
 }
