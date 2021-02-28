@@ -1,9 +1,10 @@
 :root {
-  /*
-    --primary-color:
-    --title-color:
-    --text-color:
-  */
+  
+    --primary-color:#9E1700;
+
+    --title-color:#030303;
+    --text-color:#606060;
+
 }
 
 * {
@@ -12,10 +13,14 @@
   box-sizing: border-box;
 }
 
+body, html, #root {
+  height: 100%;
+}
+
 body {
   background: #f0f0f5;
   -webkit-font-smoothing: antialiased;
-  /*color:var(--text-color);*/
+  color:var(--text-color);
 }
 
 body, input, button {
