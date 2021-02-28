@@ -72,7 +72,7 @@ const Address: React.FC<AddressProps> = (props) => {
                 backLink={'/Doughs'}
                 disableNext={disableNext()}
                 nextLink={'/ConfirmOrder'}
-                nextText={'Preencha o endereço'}
+                nextText={'Próximo'}
                 order={order}
             />
         </div>
