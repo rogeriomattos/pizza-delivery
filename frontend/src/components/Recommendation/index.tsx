@@ -1,22 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
 
 interface RecommendationProps {
     title: string;
     description: string;
     buttonText: string;
-    buttonLinkTo: string; 
+    buttonLinkTo: string;
+    data?: any; 
 }
 
 const Recommendation: React.FC<RecommendationProps> = (props) => {
+    
+    const history = useHistory();
+    
+    const goToPage = () => {
+        if(props.data)
+            history.push(props.buttonLinkTo, props.data);
+        else
+            history.push(props.buttonLinkTo);
+
+    };
+    
     return(
         <div className="recommendation">
             <h2>{props.title}</h2>
             <p>{props.description}</p>
-            <Link to={props.buttonLinkTo}>
-                <button>{props.buttonText}</button>
-            </Link>
+            <button onClick={goToPage}>{props.buttonText}</button>
         </div>
     );
 };

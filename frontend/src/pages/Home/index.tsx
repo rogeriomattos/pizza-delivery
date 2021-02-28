@@ -4,15 +4,18 @@ import formatPrice from '../../utils/formatPrice';
 
 import Recommendation from '../../components/Recommendation';
 import api from '../../services/api';
+import IRecommendation from '../../entites/IRecommendation';
 
 const Home = () => {
-    const [dailyRecommendation, setDailyRecommendation] = useState({
-        discount: 0,
-        pizza:{name: "", price: 0}
+    const [dailyRecommendation, setDailyRecommendation] = useState<IRecommendation>({
+        discount:0, 
+        dough: {id:0, name:''},
+        size: {id:0, name:'', description: ''},
+        pizza: {id:0, ingredients: '', name: '', price: 0},
     });
 
     useEffect(()=>{
-        api.get('/promotions/today')
+        api.get('/recommendation/today')
         .then((res) => {
             setDailyRecommendation(res.data);
         });
@@ -23,9 +26,18 @@ const Home = () => {
             {dailyRecommendation != undefined &&
             <Recommendation
                 title={'Recomendação do dia ' + dailyRecommendation.discount+'% off'}
-                description={dailyRecommendation.pizza.name}
+                description={   dailyRecommendation.pizza.name + ', ' + 
+                                dailyRecommendation.size.name  + ' e ' +
+                                dailyRecommendation.dough.name
+                            }
                 buttonText={'Pedir'}
                 buttonLinkTo={'/Address'}
+                data={{order:{
+                    pizza:dailyRecommendation.pizza,
+                    size:dailyRecommendation.size,
+                    dough: dailyRecommendation.dough,
+                    recommendation: dailyRecommendation
+                }}}
             /> }
             <Recommendation
                 title={'Monte a pizza do seu jeito'}
