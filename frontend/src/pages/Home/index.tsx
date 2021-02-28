@@ -16,7 +16,7 @@ const Home = () => {
             <Recommendation
                 title={'Monte a pizza do seu jeito'}
                 description={'Varios Sabores exclusivos para você'}
-                buttonText={'Ver Cardápio'}
+                buttonText={'Começar a montar'}
                 buttonLinkTo={'/Sizes'}
             />
         </div>
