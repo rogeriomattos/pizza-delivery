@@ -54,3 +54,19 @@ a, a:visited {
   text-decoration: none;
   color: inherit;
 }
+
+input[type="text"] {
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border-color: #ccc;
+  border-style: solid;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
