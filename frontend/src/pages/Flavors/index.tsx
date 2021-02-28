@@ -48,7 +48,7 @@ const Flavors:React.FC<FlavorsProps> = (props) => {
                 backLink={'/Doughs'}
                 disableNext={order && order.pizza == undefined}
                 nextLink={'/Address'}
-                nextText={'Preencha o endereço'}
+                nextText={'Entrega'}
                 order={order}
             />
         </div>
