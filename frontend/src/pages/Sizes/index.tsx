@@ -40,7 +40,7 @@ const Sizes = () => {
 
             <StepActions 
                 backLink={'/'}
-                nextLink={'/Daughs'}
+                nextLink={'/Doughs'}
                 nextText={'Escolher Massa'}
                 order={order}
                 disableNext={order && order.size == undefined}
