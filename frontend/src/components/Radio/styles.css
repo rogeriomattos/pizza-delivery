@@ -2,7 +2,10 @@
     display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    
+    cursor: pointer;
+}
+.radio:hover {
+    opacity: .8;
 }
 
 .radio+.radio {
@@ -15,6 +18,7 @@
 
 .radio label input:checked ~ .content {
     background: #e0e0e0;
+    opacity: 1;
 }
 
 .content {
