@@ -9,15 +9,26 @@ import { FiArrowRight } from 'react-icons/fi';
 import StepActions from '../../components/StepActions';
 
 
-const Sizes = () => {
+interface SizesProps {
+    location: {
+        state: {
+            order: IOrder;
+        }
+    };
+}
+
+const Sizes:React.FC<SizesProps> = (props) => {
     const [pizzaSizes, setPizzaSizes] = useState<ISize[]>([]);
-    const [order, setOrder] = useState<IOrder>({
+    const [order, setOrder] = useState<IOrder>(
+    (props.location && props.location.state && props.location.state.order)?
+        props.location.state.order
+    :
+    {
         size: undefined
     });
 
     useEffect(() => {
-        api.get('/pizzas/sizes').then((res)=>{
-            console.log(res.data); 
+        api.get('/pizzas/sizes').then((res) => {
             setPizzaSizes(res.data);
         });
     }, []);
@@ -30,6 +41,7 @@ const Sizes = () => {
                     key={item.id}
                     name={'sizes'}
                     title={item.name}
+                    checked={(order && order.size && order.size.id  == item.id)}
                     description={item.description}
                     data={item}
                     onClick={(data) => {

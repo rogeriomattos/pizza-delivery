@@ -35,6 +35,7 @@ const Flavors:React.FC<FlavorsProps> = (props) => {
                 <Radio
                     key={item.id}
                     title={item.name}
+                    checked={(order && order.pizza && order.pizza.id  == item.id)}
                     description={formatPrice(item.price)+' | '+item.ingredients}
                     onClick={(data)=>{
                         setOrder({...order, pizza: data});

@@ -37,6 +37,7 @@ const Doughs:React.FC<DoughsProps> = (props) => {
                     onClick={(data)=>{
                         setOrder({...order, dough: data});
                     }}
+                    checked={(order && order.dough && order.dough.id  == item.id)}
                     name={'doughs'}
                     data={item}
                 />

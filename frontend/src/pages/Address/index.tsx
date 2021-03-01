@@ -32,6 +32,7 @@ const Address: React.FC<AddressProps> = (props) => {
             <label>Cidade</label>
             <input 
                 type="text" 
+                value={(order && order.address && order.address.city)?order.address.city:''}
                 onChange={(ev)=>{
                     const { value } = ev.target;
                     setOrder({...order, 
@@ -42,7 +43,8 @@ const Address: React.FC<AddressProps> = (props) => {
             <label>UF</label>
             <input 
                 type="text"
-                onChange={(ev)=>{
+                value={(order && order.address && order.address.UF)?order.address.UF:''}
+                onChange={(ev) => {
                     const { value } = ev.target;
                     setOrder({...order, 
                                 address:{...order.address, UF: value}
@@ -52,7 +54,8 @@ const Address: React.FC<AddressProps> = (props) => {
             <label>CEP</label>
             <input 
                 type="text"
-                onChange={(ev)=>{
+                value={(order && order.address && order.address.CEP)?order.address.CEP:''}
+                onChange={(ev) => {
                     const { value } = ev.target;
                     setOrder({...order, 
                                 address:{...order.address, CEP: value}
@@ -60,8 +63,10 @@ const Address: React.FC<AddressProps> = (props) => {
                 }}
             />
             <label>Endereço</label>
-            <input type="text"
-                onChange={(ev)=>{
+            <input 
+                type="text"
+                value={(order && order.address && order.address.address)?order.address.address:''}
+                onChange={(ev) => {
                     const { value } = ev.target;
                     setOrder({...order, 
                                 address:{...order.address, address: value}
