@@ -21,7 +21,7 @@ const Recommendation: React.FC<RecommendationProps> = (props) => {
         else
             history.push(props.buttonLinkTo);
 
-    };
+    }; 
     
     return(
         <div className="recommendation">

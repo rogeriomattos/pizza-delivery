@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './styles.css';
 import Making_pizza from '../../assets/Making_pizza.jpg';
+import recommendation_img from '../../assets/recommendation.jpg';
 
 import Recommendation from '../../components/Recommendation';
 import api from '../../services/api';
@@ -26,13 +27,14 @@ const Home = () => {
         <div id="page-home">
             {dailyRecommendation != undefined &&
             <Recommendation
-                title={'Recomendação do dia ' + dailyRecommendation.discount+'% off'}
-                description={   dailyRecommendation.pizza.name + ', ' + 
-                                dailyRecommendation.size.name  + ' e ' +
+                title={'Recomendação do dia: '+dailyRecommendation.pizza.name+' ' + dailyRecommendation.discount+'% off'}
+                description={ 'Tamanho: '+ 
+                                dailyRecommendation.size.name  + ', Massa: ' +
                                 dailyRecommendation.dough.name
                             }
                 buttonText={'Pedir'}
                 buttonLinkTo={'/Address'}
+                imgSrc={recommendation_img}
                 data={{order:{
                     pizza:dailyRecommendation.pizza,
                     size:dailyRecommendation.size,

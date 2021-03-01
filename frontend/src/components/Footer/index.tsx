@@ -13,6 +13,8 @@ const Footer = () => {
                     <a href="https://iconscout.com/illustrations/man" target="_blank">Man giving 5 stars rating Illustration</a> by <a href="https://iconscout.com/contributors/Aleshaku">Ilusiku Studio</a> on <a href="https://iconscout.com">Iconscout</a>
                     <br/>
                     <a href="https://br.freepik.com/fotos/alimento">Alimento foto criado por freepik - br.freepik.com</a>
+                    <br/>
+                    <a href="https://br.freepik.com/fotos/alimento">Alimento foto criado por wayhomestudio - br.freepik.com</a>
                 </span>
             </div>
         </footer>

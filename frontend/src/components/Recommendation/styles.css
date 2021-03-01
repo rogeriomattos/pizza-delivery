@@ -3,6 +3,7 @@
     box-sizing: border-box;
     border: 1px solid #ccc;
     padding: 10px;
+    min-height: 380px;
 }
 
 .recommendation+.recommendation{
@@ -29,5 +30,29 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 150%;
+    width: 130%;
+}
+
+@media only screen and (min-width: 600px) {
+    .recommendation+.recommendation{
+        margin-top: 20px;
+    }
+
+    .recommendation {
+        margin: 20px 40px 0 40px;
+        min-width: 300px;
+    }
+    .img-container {
+        height: 220px;
+    }
+
+    .img-container img{
+        width: 120%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .recommendation {
+        min-width: 400px;
+    }
 }
