@@ -3,7 +3,9 @@
     box-sizing: border-box;
     border: 1px solid #ccc;
     padding: 10px;
-    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .recommendation+.recommendation{
@@ -40,7 +42,7 @@
 
     .recommendation {
         margin: 20px 40px 0 40px;
-        min-width: 300px;
+        width: 300px;
     }
     .img-container {
         height: 220px;
@@ -53,6 +55,6 @@
 
 @media only screen and (min-width: 1200px) {
     .recommendation {
-        min-width: 400px;
+        width: 400px;
     }
 }

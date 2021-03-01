@@ -5,8 +5,8 @@
 @media only screen and (min-width: 600px) {
     #page-home{
         display: flex;
-        align-items: center;
         justify-content: center;
+        flex-wrap: nowrap;
     }
 }
 
