@@ -9,12 +9,4 @@ const pizzasRouter = Router();
 
 pizzasRouter.get('/', pizzasController.list);
 
-pizzasRouter.get('/sizes', (request, response) => {
-    response.json(pizzaSizes);
-});
-
-pizzasRouter.get('/doughs', (request, response) => {
-    response.json(pizzaDough);
-});
-
 export default pizzasRouter;
