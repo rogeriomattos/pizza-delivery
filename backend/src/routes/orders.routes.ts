@@ -1,21 +1,10 @@
 import { Router } from 'express';
+import OrdersController from '../controllers/OrdersController';
 
+const ordersController = new OrdersController();
 const OrdersRouter = Router();
 
-OrdersRouter.post('/', (request, response) => {
-    const { body } = request;
-
-    if(body.recommendation){
-        response.status(201).json({
-                id: 1,
-                points: 10
-            }
-        );
-    }else{
-        response.status(201).json({id: 1});
-    }
-
-});
+OrdersRouter.post('/', ordersController.create);
 
 
 export default OrdersRouter;
