@@ -74,7 +74,7 @@ const Address: React.FC<AddressProps> = (props) => {
                 }}
             />
             <StepActions
-                backLink={'/Flavors'}
+                backLink={(order && order.recommendation)?'/':'/Flavors'}
                 disableNext={disableNext()}
                 nextLink={'/ConfirmOrder'}
                 nextText={'Próximo'}
