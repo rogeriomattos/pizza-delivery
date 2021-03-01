@@ -2,7 +2,8 @@ import React from 'react';
 import IOrder from '../../entites/IOrder';
 import './styles.css';
 import { FiCheck } from 'react-icons/fi';
-import img_star from '../../assets/man_giving_5_stars-.svg';
+import img_star from '../../assets/man_giving_5_stars.svg';
+import delivery_boy from '../../assets/delivery-boy.svg';
 
 interface ThankYouPageProps {
     location: {
@@ -35,6 +36,11 @@ const ThankYouPage:React.FC<ThankYouPageProps> = (props) => {
                 </h1>
             </div>
             }   
+            {!props.location.state.points && 
+            <div className="deliver-boy">
+                <img src={delivery_boy}/>
+            </div>
+            }
         </div>
     );
 };

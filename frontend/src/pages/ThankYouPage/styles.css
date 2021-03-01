@@ -1,5 +1,5 @@
 #page-thank-you {
-
+    
 }
 
 #page-thank-you .message {
@@ -33,10 +33,10 @@
     height: 30px;
     transform: translate(-50%, -50%);
 }
-.pointsMessage {
+.pointsMessage, .deliver-boy {
     text-align: center;
 }
-.pointsMessage img {
+.pointsMessage img, .deliver-boy img {
     max-height: 400px;
 }
 
@@ -47,7 +47,7 @@
         align-items: center;
         text-align: left;
     }
-    .pointsMessage img {
+    .pointsMessage img, .deliver-boy img  {
         max-height: 400px;
     }
 }
