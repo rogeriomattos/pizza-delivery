@@ -1,4 +1,4 @@
-<h1 align="center">Pizza Delivery</h1>
+<h1 align="center">:pizza:Pizza Delivery</h1>
 
 <h2>How to run</h2>
 
