@@ -1,5 +1,5 @@
 <h1 align="center">:pizza:Pizza Delivery</h1>
-
+<p align="center">Pizza ordering system built with Nodejs and React</p>
 <h2>How to run</h2>
 
 1. Download the repository to your computer, as shown below:
